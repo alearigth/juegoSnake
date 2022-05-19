@@ -59,7 +59,7 @@ const moveSnake = () => {
 
     if(newSquare < 0 ||
         newSquare > boardSize * boardSize ||
-        (direction === "ArrowRigth" && column == 0) ||
+        (direction === "ArrowRight" && column == 0) ||
         (direction === "ArrowLeft" && column == 9 ||
         boardSquares[row][column] === squareTypes.snakeSquare) ) {
             gameOver()
